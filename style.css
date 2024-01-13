@@ -3,19 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
     --maincolor: #E83350;
     --black: #2C3335;
     --textcolor: #333945;
     --white: #fff;
 }
-
 body {
     background-color: #fff;
     transition: all 1s;
 }
-
 header {
     position: fixed;
     top: 0;
@@ -25,33 +22,27 @@ header {
     z-index: 1;
     background-color: var(--white);
 }
-
 a {
     text-decoration: none;
     color: var(--textcolor);
 }
-
 .container {
     display: flex;
     padding: 10px 20px;
     width: 90%;
     margin: 0 auto;
 }
-
 header .container {
     justify-content: space-between
 }
-
 header img {
     width: 300px;
 }
-
 header ul {
     list-style: none;
     display: flex;
     align-items: center;
 }
-
 header ul li {
     padding: 5px 20px;
     margin: 0 10px;
@@ -60,15 +51,11 @@ header ul li {
     background-color: var(--white);
     color: var(--textcolor);
 }
-
 header ul li:hover {
     background-color: var(--maincolor);
     color: var(--white);
     border-radius: 8px;
 }
-
-
-
 section {
     padding-top: 120px;
 }
@@ -78,19 +65,16 @@ section#skill{
 section .container {
     flex-direction: column;
 }
-
 header+section {
     margin-top: 0;
     margin-bottom: 0;
     height: calc(100vh - 92px);
 }
-
 header+section .container {
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-
 #about img {
     width: 250px;
     height: 250px;
@@ -98,12 +82,10 @@ header+section .container {
     object-fit: cover;
     margin-bottom: 20px;
 }
-
 #about h4 {
     font-size: 20px;
     color: var(--maincolor);
 }
-
 #about p {
     font-size: 24px;
     padding: 20px 0;
@@ -112,7 +94,6 @@ header+section .container {
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--textcolor);
 }
-
 #about button {
     width: 200px;
     background-color: var(--white);
@@ -125,20 +106,15 @@ header+section .container {
     color: var(--textcolor);
     transition: all 0.2s;
 }
-
 #about button span {
     font-style: italic;
 }
-
 #about button:hover {
     background-color: var(--maincolor);
     color: var(--white);
     border-radius: 10px;
     border: 1px solid var(--maincolor);
 }
-
-
-
 #project #grid{
     display: grid;
     grid-template-columns: auto auto auto;   
@@ -146,7 +122,7 @@ header+section .container {
     gap: 60px 40px;
 }
 #project #grid .box:hover{
-    transform: rotateZ(5deg);
+    transform: rotateZ(4deg);
 }
 #project #grid .box{
     width: 320px;
@@ -167,6 +143,11 @@ header+section .container {
     font-size: 18px;
     text-align:left;
     color: var(--black);
+    height: 50px;
+    overflow: hidden;
+}
+#project .box p+p{
+    height: auto;
 }
 #project .box .row{
     display: flex;
@@ -189,9 +170,6 @@ header+section .container {
     color: var(--white);
     border: 1px solid var(--maincolor);
 }
-
-
-
 #skill{
     background-color: #fff;
 }
@@ -205,26 +183,21 @@ header+section .container {
     margin-top: 20px;
     text-align: center;
 }
-
 #skill #grid .box {
     width: 100%;
     border: 1px solid var(--maincolor);
     border-radius: 5px;
     padding: 10px;
 }
-
 #skill img {
     width: 50px;
     margin: 10px auto;
     display: block;
 }
-
 #skill #grid h1{
     margin: 10px 0;
     color: var(--textcolor);
 }
-
-
 #contact h1{
     text-align: center;
     font-size: 32px;
@@ -251,7 +224,6 @@ header+section .container {
     font-size: 28px;
     color: var(--maincolor);
 }
-
 form{
     display: flex;
     flex-direction: column;
@@ -295,10 +267,6 @@ form button{
     border-radius: 5px;
     color: var(--white);
 }
-
-
-
-
 footer{
     background-color: var(--black);
     color: var(--white);
