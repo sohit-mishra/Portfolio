@@ -70,7 +70,7 @@ header ul li:hover {
 }
 
 section#about{
-    padding-top: 120px;
+    padding-top: 100px;
     height: 800px;
 }
 
@@ -82,7 +82,7 @@ section#project{
 }
 section#contact{
     padding-top: 120px;
-    height: 800px;
+    height: 820px;
 }
 section .container {
     flex-direction: column;
@@ -400,6 +400,9 @@ footer p {
     }
     form {
         width: 80%;
+    }
+    #contact h3{
+        text-align: center;
     }
 }
 
