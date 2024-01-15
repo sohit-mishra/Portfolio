@@ -17,7 +17,7 @@
         <div class="container">
             <a href="#"><img src="img/logo.svg" alt="Sohit Mishra"></a>
             <ul>
-                <a href="#about">
+                <a href="./#about">
                     <li>About</li>
                 </a>
                 <a href="#skill">
@@ -32,6 +32,8 @@
                 <a href="">
                     <li>Resume</li>
                 </a>
+                <i class="fa-solid fa-x" onclick="closebar()"></i>
+                <i class="fa-solid fa-house" onclick="sidebar()"></i>
             </ul>
         </div>
     </header>
@@ -41,25 +43,32 @@
     <section id="about">
         <div class="container">
             <img src="img/photo.jpg" alt="" />
-            <h4>Hi, I'm Sohit Mishra 👋</h4>
-            <p>Versatile web developer with a proven track record in building dynamic, user-centric websites. Proficient
-                in various technologies and frameworks.</p>
-            <button>Resume <span class="material-symbols-outlined">
-                    download
-                </span>
+            <h4>Hello! I'm Sohit Mishra, a passionate Full Stack Developer 👋</h4>
+            <p> Skilled in crafting efficient, user-friendly web applications. Strong background in both front-end and
+                back-end technologies.
+                I love turning ideas into reality through code.
+            </p>
+            <button
+                onclick="window.location.href = 'https://drive.google.com/file/d/1RMitZkpAJxfypQe0WMdWhrwLaViPCOZ3/view'">Resume
+                <i class="fa-solid fa-download"></i>
             </button>
         </div>
     </section>
 
     <section id="skill">
         <div class="container">
-            <h1>Skills</h1>
+            <h1 id="projecttittle">Skills</h1>
             <p></p>
             <div id="grid">
 
                 <div class="box">
                     <img src="img/figma.svg" alt="">
                     <h1>Figma</h1>
+                </div>
+
+                <div class="box">
+                    <img src="img/adobexd.svg" alt="">
+                    <h1>Adobe Xd</h1>
                 </div>
 
                 <div class="box">
@@ -91,46 +100,68 @@
                     <img src="img/postman.svg" alt="">
                     <h1>Postman</h1>
                 </div>
+
+                <div class="box">
+                    <img src="img/nodejs.svg" alt="">
+                    <h1>Nodejs</h1>
+                </div>
+
+                <div class="box">
+                    <img src="img/php.svg" alt="">
+                    <h1>Php</h1>
+                </div>
+
+                <div class="box">
+                    <img src="img/mysql.svg" alt="">
+                    <h1>MySql</h1>
+                </div>
+
+                <div class="box">
+                    <img src="img/gulpfile.svg" alt="">
+                    <h1>Gulpfile</h1>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="project">
         <div class="container">
-            <h1>Projects</h1>
-            <p></p>
+            <h1 id="projecttittle">Projects</h1>
             <div id="grid">
                 <div class="box">
                     <img src="img/apple.jpg" alt="">
                     <h1>Apple Clone</h1>
                     <p>I am cloning the Apple and Responsible website using HTML and CSS.</p>
                     <p>Language:- HTML ,CSS</p>
-                    <div class="row"> 
-                        <button>Github</button>
-                        <button>Live</button>
+                    <div class="row">
+                        <button
+                            onclick="window.location.href ='https://github.com/sohit-mishra/appleclone'">Github</button>
+                        <button onclick="window.location.href ='https://jsapple.netlify.app/'">Live</button>
                     </div>
-
                 </div>
 
                 <div class="box">
                     <img src="img/shopcart.PNG" alt="">
                     <h1>ShopKart</h1>
-                    <p>It's a grocery store's website featuring responsibly sourced fruits and vegetables, utilizing HTML, CSS, and JavaScript with fetch functionality.</p>
+                    <p>It's a grocery store's website featuring responsibly sourced fruits and vegetables, utilizing
+                        HTML, CSS, and JavaScript with fetch functionality.</p>
                     <p>Language:- HTML ,CSS, JavaScript</p>
                     <div class="row">
-                        <button>Github</button>
-                        <button>Live</button>
+                        <button
+                            onclick="window.location.href ='https://github.com/sohit-mishra/shopcart'">Github</button>
+                        <button onclick="window.location.href ='https://jsshopcart.netlify.app/'">Live</button>
                     </div>
                 </div>
 
                 <div class="box">
                     <img src="img/loseit.PNG" alt="">
                     <h1>Loseit</h1>
-                    <p>I am replicating the LoseIt website with multiple animations and making it responsive using HTML, CSS, and JavaScript.</p>
+                    <p>I am replicating the LoseIt website with multiple animations and making it responsive using HTML,
+                        CSS, and JavaScript.</p>
                     <p>Language:- HTML ,CSS, JavaScript</p>
-                    <div class="row"> 
-                        <button>Github</button>
-                        <button>Live</button>
+                    <div class="row">
+                        <button onclick="window.location.href ='https://github.com/sohit-mishra/loseit'">Github</button>
+                        <button onclick="window.location.href ='https://jsloseit.netlify.app/'">Live</button>
                     </div>
                 </div>
 
@@ -140,8 +171,8 @@
                     <p>I am replicating the responsive design of bukk.com.au using HTML, CSS, and JavaScript.</p>
                     <p>Language:- HTML ,CSS</p>
                     <div class="row">
-                        <button>Github</button>
-                        <button>Live</button>
+                        <button onclick="window.location.href ='https://github.com/sohit-mishra/bukk'">Github</button>
+                        <button onclick="window.location.href ='https://jsbukk.netlify.app/'">Live</button>
                     </div>
                 </div>
             </div>
@@ -156,18 +187,18 @@
                     <h3>Get In Touch With Me
                     </h3>
                     <div class="row">
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></i></a>
-                        <a href=""><i class="fa-brands fa-codepen"></i></a>
+                        <a href="https://www.linkedin.com/in/sohitmishra/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sohit-mishra"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://codepen.io/sohitmishra"><i class="fa-brands fa-codepen"></i></a>
                     </div>
                 </div>
 
-                <form action="">
-                    <input type="text" id="name" placeholder="Name" />
-                    <input type="email" id="email" placeholder="Email Address" />
-                    <input type="tel" name="phone" id="phone" placeholder="Phone Number" />
-                    <textarea name="message" id="message" placeholder="Message"></textarea>
-                    <button>Sumbit</button>
+                <form>
+                    <input type="text" id="name" placeholder="Name" name="name" required />
+                    <input type="email" id="email" placeholder="Email Address" name="email" required />
+                    <input type="tel" name="phone" id="phone" placeholder="Phone Number" required />
+                    <textarea name="message" id="message" placeholder="Message" required></textarea>
+                    <button type="submit">Sumbit</button>
                 </form>
             </div>
         </div>

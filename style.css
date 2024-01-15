@@ -3,45 +3,56 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --maincolor: #E83350;
     --black: #2C3335;
     --textcolor: #333945;
     --white: #fff;
 }
+
 body {
     background-color: #fff;
     transition: all 1s;
 }
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0px 0px 2px 0px var(--maincolor);
+    box-shadow: 0px 0px 4px 2px #d7d7d7;
     z-index: 1;
     background-color: var(--white);
 }
+
 a {
     text-decoration: none;
     color: var(--textcolor);
 }
+
 .container {
     display: flex;
     padding: 10px 20px;
     width: 90%;
     margin: 0 auto;
 }
+
 header .container {
     justify-content: space-between
 }
+
 header img {
     width: 300px;
 }
+
 header ul {
     list-style: none;
     display: flex;
     align-items: center;
+}
+header ul i{
+    display: none !important;
 }
 header ul li {
     padding: 5px 20px;
@@ -51,49 +62,68 @@ header ul li {
     background-color: var(--white);
     color: var(--textcolor);
 }
+
 header ul li:hover {
     background-color: var(--maincolor);
     color: var(--white);
     border-radius: 8px;
 }
-section {
+
+section#about{
+    padding-top: 120px;
+    height: 800px;
+}
+
+section#skill {
     padding-top: 120px;
 }
-section#skill{
-    height: 100vh;
+section#project{
+    padding-top: 120px;
+}
+section#contact{
+    padding-top: 120px;
+    height: 800px;
 }
 section .container {
     flex-direction: column;
 }
+
 header+section {
     margin-top: 0;
     margin-bottom: 0;
     height: calc(100vh - 92px);
 }
+
 header+section .container {
     justify-content: center;
     align-items: center;
     height: 100%;
 }
+
 #about img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
+    margin-top: -30px;
 }
+
 #about h4 {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--maincolor);
+    text-align: center;
 }
+
 #about p {
-    font-size: 24px;
+    font-size: 20px;
     padding: 20px 0;
     width: 600px;
     text-align: center;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--textcolor);
 }
+
 #about button {
     width: 200px;
     background-color: var(--white);
@@ -102,61 +132,80 @@ header+section .container {
     align-items: center;
     justify-content: center;
     padding: 8px 0;
+    height: 40px;
     margin-top: 30px;
     color: var(--textcolor);
     transition: all 0.2s;
 }
-#about button span {
+
+#about button i {
     font-style: italic;
+    margin-left: 10px;
 }
+
 #about button:hover {
     background-color: var(--maincolor);
     color: var(--white);
     border-radius: 10px;
     border: 1px solid var(--maincolor);
 }
-#project #grid{
+
+#project #grid {
     display: grid;
-    grid-template-columns: auto auto auto;   
+    grid-template-columns: auto auto auto;
     padding: 30px 0;
     gap: 60px 40px;
 }
-#project #grid .box:hover{
+
+#projecttittle {
+    text-align: center;
+    color: var(--maincolor);
+    font-size: 36px;
+}
+
+#project #grid .box:hover {
     transform: rotateZ(4deg);
 }
-#project #grid .box{
+
+#project #grid .box {
     width: 320px;
     border-radius: 10px;
     overflow: hidden;
     transition: all 0.2s;
 }
-#project .box img{
+
+#project .box img {
     width: 100%;
 }
-#project .box h1{
+
+#project .box h1 {
     padding: 10px 0 5px 0;
     font-size: 22px;
     color: var(--maincolor);
 }
-#project .box p{
+
+#project .box p {
     padding: 5px 0px;
     font-size: 18px;
-    text-align:left;
+    text-align: left;
     color: var(--black);
     height: 50px;
     overflow: hidden;
 }
-#project .box p+p{
+
+#project .box p+p {
     height: auto;
 }
-#project .box .row{
+
+#project .box .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 10px;
     margin: 10px 0px 20px;
 }
-#project .box button{
+
+#project .box button {
     padding: 10px 5px;
     width: 180px;
     margin-right: 20px;
@@ -165,17 +214,21 @@ header+section .container {
     background-color: transparent;
     font-weight: 550;
 }
-#project .box button + button{
+
+#project .box button+button {
     background-color: var(--maincolor);
     color: var(--white);
     border: 1px solid var(--maincolor);
 }
-#skill{
+
+#skill {
     background-color: #fff;
 }
-#skill h1{
+
+#skill h1 {
     color: var(--maincolor);
 }
+
 #skill .container #grid {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -183,48 +236,58 @@ header+section .container {
     margin-top: 20px;
     text-align: center;
 }
+
 #skill #grid .box {
     width: 100%;
     border: 1px solid var(--maincolor);
     border-radius: 5px;
     padding: 10px;
 }
+
 #skill img {
     width: 50px;
     margin: 10px auto;
     display: block;
+    height: 50px;
 }
-#skill #grid h1{
+
+#skill #grid h1 {
     margin: 10px 0;
     color: var(--textcolor);
 }
-#contact h1{
+
+#contact h1 {
     text-align: center;
     font-size: 32px;
     color: var(--maincolor);
 }
-#contact #row{
+
+#contact #row {
     display: flex;
     flex-direction: column;
     padding: 40px 0;
     align-items: center;
 }
-#contact h3{
+
+#contact h3 {
     font-size: 36px;
     color: var(--black);
     margin-bottom: 10px;
 }
-#contact .row{
+
+#contact .row {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#contact .row i{
+
+#contact .row i {
     padding: 20px 10px;
     font-size: 28px;
     color: var(--maincolor);
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -232,7 +295,8 @@ form{
     order: -1;
     margin-bottom: 60px;
 }
-form input{
+
+form input {
     margin: 5px 0 20px;
     width: 100%;
     background: #dfdfdf;
@@ -244,10 +308,12 @@ form input{
     border: 0;
     color: var(--maincolor);
 }
-form input::placeholder{
+form textarea::placeholder,
+form input::placeholder {
     color: var(--textcolor);
 }
-form textarea{
+
+form textarea {
     margin: 5px 0 20px;
     width: 100%;
     border: 0;
@@ -260,18 +326,113 @@ form textarea{
     height: 120px;
     resize: none;
 }
-form button{
+
+form button {
     height: 40px;
     background: var(--maincolor);
     border: 0;
     border-radius: 5px;
     color: var(--white);
 }
-footer{
+
+footer {
     background-color: var(--black);
     color: var(--white);
     padding: 20px 0;
 }
-footer p{
+
+footer p {
     text-align: center;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    header img{
+        width: 250px;
+    }
+    header ul li{
+        display: none;
+    }
+    .toggle{
+        position: absolute;
+        width: 100%;
+        background: var(--maincolor);
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .toggle li{
+        background-color: var(--maincolor);
+        color: var(--white);
+    }
+    .toggle i{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 26px;
+        color: var(--white);
+        display: inline-block !important;
+    }
+    .toggle i:last-child{
+        display: none !important;
+    }
+    #about p{
+        width: 100%;
+    }
+    header ul i:last-child{
+        display: inline-block !important;
+        font-size: 22px;
+        color: var(--maincolor);
+    }
+    #project #grid {
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+    form {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #project #grid {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    #project #grid .box {
+        width: 100%;
+        border: 1px solid #cecece;
+    }
+
+    #project .box p {
+        height: 44px;
+    }
+
+    #project #grid .box h1,
+    #project #grid .box p,
+    #project #grid .box .row {
+        padding: 0 15px;
+    }
+
+    #project #grid .box:hover {
+        transform: rotateZ(0deg);
+        ;
+    }
+    form {
+        width: 100%;
+        padding: 10px 0;
+    }
+    #skill .container #grid{
+        grid-template-columns: auto auto;
+    }
 }
